@@ -15,13 +15,13 @@
 
 </script>
 
-<main class='min-h-screen bg-gray-900 overflow-hidden'>
-  <nav id='topNav'class='relative bg-gradient-to-b from-blue-900 to-neutral-600 h-25 w-screen flex items-center justify-between px-7 border-blue-950 border-1 text-xl font-bold z-3 '>
+<main class='min-h-screen bg-secondary overflow-hidden'>
+  <nav id='topNav'class='relative bg-primary h-25 w-screen flex items-center justify-between px-7 shadow-xl text-xl font-bold z-3 '>
     <div>
     <button
       type="button"
       on:click={toggleMenu}
-      class='flex items-center justify-center text-white text-center outline-gray-600 hover:outline-2 bg-gray-650 bg-clip-border outline-offset-4 rounded focus:bg-gray-600 focus:outline-2' >
+      class='flex items-center justify-center text-white text-center outline-secondary_accent hover:outline-2 bg-gray-650 bg-clip-border outline-offset-4 rounded focus:bg-gray-600 focus:outline-2' >
       <img class='invert w-6 h-6 mr-2' src={menuBar}>
       <span>Explore</span>
     </button>
@@ -42,7 +42,7 @@
   </nav>
   
 
-  <nav id='fullMenu' class='relative h-60 w-2/3 mx-auto bottom-50 flex justify-center items-start bg-slate-700 rounded-b-3xl shadow-xl/20 z-2 transition delay-150 ease-in-out duration-300 {isHovered ? 'translate-y-50' : 'translate-y-0'}'>
+  <nav id='fullMenu' class='relative h-60 w-2/3 mx-auto bottom-50 flex justify-center items-start bg-primary_accent rounded-b-3xl shadow-xl/20 z-2 transition delay-150 ease-in-out duration-300 {isHovered ? 'translate-y-50' : 'translate-y-0'}'>
 
     
     <div 
@@ -68,7 +68,7 @@
         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
       </svg>
       </div>
-      <div class=" flex text-gray-600">This card has an image, title, text, and a button.</div>
+      <div class=" flex text-aa">This card has an image, title, text, and a button.</div>
     </div>
     
     <div class="flex relative flex-col top-10 bg-white rounded-2xl shadow-xl max-w-120 max-h-30 p-5 space-y-4 justify-center items-center">      
@@ -86,7 +86,7 @@
 </div>
 
   <div id='menuSelection'>
-      <ul class='relative flex text-s text-white space-x-5 sm:space-x-10 md:space-x-20 lg:space-x-35 mt-52'>
+      <ul class='relative flex text-s text-white space-x-5 sm:space-x-10 md:space-x-20 lg:space-x-35 {isHovered ? 'mt-48 transition-discrete ease-in-out delay-200' : 'mt-52 transition-discrete ease-in-out delay-200'}' >
       <li><a href="#" class=" hover:text-blue-600">Home</a></li>
       <li><a href="#" class=" hover:text-blue-600">About</a></li>
       <li><a href="#" class=" hover:text-blue-600">Services</a></li>
