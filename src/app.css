@@ -7,6 +7,6 @@
     --color-secondary_accent: #74a57f;
 }
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@utility no-scrollbars {
+  scrollbar-width: none;
+}
