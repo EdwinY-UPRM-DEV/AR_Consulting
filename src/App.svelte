@@ -1,7 +1,7 @@
 <script lang="ts">
   import menuBar from '/burger.svg'
   import companyLogo from '/A_R.png'
-  import hero_img from '/better_hero.png'
+  import hero_img from '/hero.png'
 
 
   let isOpen = false;
@@ -17,7 +17,7 @@
 </script>
 
 <main>
-<section style={`background-image: url(${hero_img})`} class='no-scrollbars flex flex-col min-h-[90vh] bg-black/90 bg-cover bg-no-repeat bg-blend-overlay bg-fixed'> 
+<section style={`background-image: url(${hero_img})`} class='no-scrollbars flex flex-col min-h-[90vh] bg-black/30 bg-cover bg-no-repeat bg-blend-color-burn bg-fixed'> 
 <!---Nav Bar Container--->
 <div class='flex relative h-28 bg-white'>
   <!--Nav Bar Items-->
